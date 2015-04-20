@@ -1,11 +1,11 @@
-DELI: a Secondary Index for HBase/NoSQLs 
+DELI: a Log-Structured Secondary Index for HBase/NoSQL
 ======
 
 Introduction
 ------
-``DELI`` is a secondary index support for NoSQL systems. It currently supports global indexing and is applicable for HBase alike NoSQL systems where write performance is optimized through a LSM tree structure [[link](http://en.wikipedia.org/wiki/Log-structured_merge-tree)]. 
+``DELI`` is a secondary index for NoSQL systems. It currently supports global indexing and is applicable for HBase alike NoSQL systems where write performance is optimized through a LSM tree structure [[link](http://en.wikipedia.org/wiki/Log-structured_merge-tree)]. 
 
-DELI stands for "*DEferred Lightweight Indexing*", which is its uniqueness in design. The deferred indexing naturally extends the write-optimization principle of LSM trees (that is, all writes must be append-only) and works very well with HBase, Cassandra, etc.
+DELI stands for "*DEferred Lightweight Indexing*", which is its unique technique in design. The deferred indexing naturally extends the log-structured design of LSM trees (that is, all writes must be append-only) and works very well with HBase, Cassandra, etc.
 
 
 Demo
