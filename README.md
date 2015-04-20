@@ -19,7 +19,7 @@ Demo
     ```
 3. Inside the container's bash, run the following to demonstrate a DELI client program.  
     ```bash
-    #step 0: first start hdfs                       
+    #step 0                       
     source ~/.profile
     
     #step 1: first start hdfs                       
