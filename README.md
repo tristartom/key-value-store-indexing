@@ -26,21 +26,15 @@ Demo
     cd ~/app/hadoop-2.6.0 
     bin/hdfs namenode -format 
     sbin/start-dfs.sh  
-    #optional: verify hdfs runs successfully
-    grep -w "FATAL\|ERROR" logs/*
-
+    
     #step 2: then run hbase                         
     cd ~/app/hbase-0.99.2 
     bin/start-hbase.sh  
-    #optional: shell
-    bin/hbase shell
-    #optional: verify hdfs runs successfully
-    grep -w "FATAL\|ERROR" logs/*
-
+    
     #step 3: run deli demo program
     cd ~/app/deli
     ant #compile the deli client
-    ./tt_sh/run.sh #demonstrate data can be accessed through getByIndex interface.
+    ./tt_sh/run.sh #demonstrate data can be accessed through a value-based Get (GetByIndex).
     ```
 
 If you observe ``Result is key1`` by the end of printout, it means the demo runs successfully. The demo source code can be found in ``~/app/deli/src/tthbase/client/Demo.java``
